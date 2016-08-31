@@ -2,6 +2,13 @@
 <items version="2" >
 
     <item
+        jar="/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-22.0.0_c958ced8dedbbbe2c88e0c54e58372a41e0137b0/classes.dex" />
+    </item>
+    <item
         jar="/Users/yogenders/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.1.2/7052283359001bb108753cb0583a887d3bf94c82/okhttp-3.1.2.jar"
         jumboMode="true"
         revision="22.0.1"
@@ -16,53 +23,18 @@
         <dex dex="/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-22.0.0_ff5540d9fff9e345dee82b3530126a5355f7844b/classes.dex" />
     </item>
     <item
-        jar="/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/support-v13/22.0.0/jars/libs/internal_impl-22.0.0.jar"
-        jumboMode="true"
-        revision="22.0.1"
-        sha1="def3eff2b7b4774d96ae15b07b3fc0111edbfe24">
-        <dex dex="/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-22.0.0_c341bbb68c2f3dcbf8783176fe400652045860ec/classes.dex" />
-    </item>
-    <item
-        jar="/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        revision="22.0.1"
-        sha1="49aee89725a8663f6ca4348778afd157d9b43c37">
-        <dex dex="/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_0899838dbf104a9b18b45adc5c563f106eba082c/classes.dex" />
-    </item>
-    <item
-        jar="/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/palette-v7/22.0.0/jars/classes.jar"
-        jumboMode="true"
-        revision="22.0.1"
-        sha1="285506e1cf9d5a66878e2aab3884b3427f8734e9">
-        <dex dex="/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-palette-v7-22.0.0_d2d0cdb83f66402910b0ce630e02e6c2b5b68f9a/classes.dex" />
-    </item>
-    <item
-        jar="/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        revision="22.0.1"
-        sha1="c72065e35eb4cd22beb80eec7434666370a0b72a">
-        <dex dex="/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_d7b59d4f76c340d4fb1e261275e85fbcc8879483/classes.dex" />
-    </item>
-    <item
-        jar="/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.0.0/jars/classes.jar"
-        jumboMode="true"
-        revision="22.0.1"
-        sha1="c6d79137693d494dee16372d3921f919eb724ced">
-        <dex dex="/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-22.0.0_88ec6f53ac91acf1c2f9cb53676d87e12e597758/classes.dex" />
-    </item>
-    <item
-        jar="/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/jars/classes.jar"
-        jumboMode="true"
-        revision="22.0.1"
-        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
-        <dex dex="/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-22.0.0_c958ced8dedbbbe2c88e0c54e58372a41e0137b0/classes.dex" />
-    </item>
-    <item
         jar="/Users/yogenders/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.6.0/98476622f10715998eacf9240d6b479f12c66143/okio-1.6.0.jar"
         jumboMode="true"
         revision="22.0.1"
         sha1="98476622f10715998eacf9240d6b479f12c66143">
         <dex dex="/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.6.0_7fa39a144e3f1ded3f96c03060fa5c0f3d4f5576/classes.dex" />
+    </item>
+    <item
+        jar="/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/support-v13/22.0.0/jars/libs/internal_impl-22.0.0.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="def3eff2b7b4774d96ae15b07b3fc0111edbfe24">
+        <dex dex="/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-22.0.0_c341bbb68c2f3dcbf8783176fe400652045860ec/classes.dex" />
     </item>
     <item
         jar="/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/jars/classes.jar"
@@ -79,6 +51,13 @@
         <dex dex="/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v13-22.0.0_b97e9d977b853a9b329dad8f97de07320471acbb/classes.dex" />
     </item>
     <item
+        jar="/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="1a797220191c9e5349fd073341d08f89bdd67190">
+        <dex dex="/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_0899838dbf104a9b18b45adc5c563f106eba082c/classes.dex" />
+    </item>
+    <item
         jar="/Users/yogenders/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar"
         jumboMode="true"
         revision="22.0.1"
@@ -93,11 +72,32 @@
         <dex dex="/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-cardview-v7-22.0.0_dfff049716af9a415d3dc5a35653509bcc35afaf/classes.dex" />
     </item>
     <item
+        jar="/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/palette-v7/22.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="285506e1cf9d5a66878e2aab3884b3427f8734e9">
+        <dex dex="/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-palette-v7-22.0.0_d2d0cdb83f66402910b0ce630e02e6c2b5b68f9a/classes.dex" />
+    </item>
+    <item
+        jar="/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="c0fc4cc91ceeb8c1eac1d7adc8a787e87fb27222">
+        <dex dex="/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_d7b59d4f76c340d4fb1e261275e85fbcc8879483/classes.dex" />
+    </item>
+    <item
         jar="/Users/yogenders/Documents/xyzreader/XYZReader/libs/volley.jar"
         jumboMode="true"
         revision="22.0.1"
         sha1="c68094cbd011a3f9dccbfe16e77a2cf43622e277">
         <dex dex="/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/2/volley_17bb66ade819e666598d81019b88da5f4eb5eb7e/classes.dex" />
+    </item>
+    <item
+        jar="/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="c6d79137693d494dee16372d3921f919eb724ced">
+        <dex dex="/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-22.0.0_88ec6f53ac91acf1c2f9cb53676d87e12e597758/classes.dex" />
     </item>
 
 </items>
