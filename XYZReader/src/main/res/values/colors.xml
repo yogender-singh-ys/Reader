@@ -16,8 +16,17 @@
 -->
 
 <resources>
-    <color name="photo_placeholder">#ccc</color>
 
+    <!-- Primary colors for App Theme -->
+    <color name="colorPrimary" >#e64a19</color>
+    <color name="colorPrimaryDark" >#ff5722</color>
+    <color name="colorAccent" >#03a9f4</color>
+
+    <color name="textPrimary">#212121</color>
+    <color name="textSecondary">#757575</color>
+    <color name="textSeparator">#f1f1f1</color>
+
+    <color name="photo_placeholder">#ccc</color>
     <color name="theme_primary">#04561A</color>
     <color name="theme_primary_dark">#04561A</color>
     <color name="theme_accent">#04561A</color>

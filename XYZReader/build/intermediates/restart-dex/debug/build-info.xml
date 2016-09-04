@@ -4,32 +4,30 @@
     api-level="24"
     density="560dpi"
     format="7"
-    timestamp="178174627612084"
+    timestamp="1438171224705"
     token="501706358771829713" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="1821" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="478" />
     <task
         name="verifier"
-        duration="0" />
+        duration="79" />
 
-    <build timestamp="174705028386184" >
+    <artifact
+        location="/Users/yogenders/Documents/xyzreader/XYZReader/build/outputs/apk/XYZReader-debug.apk"
+        type="MAIN" />
+
+    <build timestamp="1438171224705" >
         <artifact
             location="/Users/yogenders/Documents/xyzreader/XYZReader/build/outputs/apk/XYZReader-debug.apk"
             type="MAIN" />
     </build>
-    <build timestamp="176480232205276" >
-        <artifact
-            location="/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/res/resources-debug.ap_"
-            type="RESOURCES" />
-    </build>
-    <build timestamp="178174627612084" />
 
 </instant-run>
