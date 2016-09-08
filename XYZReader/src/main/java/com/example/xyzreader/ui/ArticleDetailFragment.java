@@ -142,6 +142,8 @@ public class ArticleDetailFragment extends Fragment implements LoaderManager.Loa
         return mRootView;
     }
 
+
+
     private void updateStatusBar() {
         int color = 0;
 
