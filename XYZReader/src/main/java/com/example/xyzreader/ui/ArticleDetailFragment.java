@@ -17,11 +17,13 @@ import android.text.Html;
 import android.text.format.DateUtils;
 import android.text.method.LinkMovementMethod;
 import android.util.Log;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.ImageLoader;
@@ -78,7 +80,7 @@ public class ArticleDetailFragment extends Fragment implements LoaderManager.Loa
         }
 
         mIsCard = getResources().getBoolean(R.bool.detail_is_card);
-        mStatusBarFullOpacityBottom = getResources().getDimensionPixelSize(R.dimen.detail_card_top_margin);
+        //mStatusBarFullOpacityBottom = getResources().getDimensionPixelSize(R.dimen.detail_card_top_margin);
         setHasOptionsMenu(true);
     }
 
@@ -119,7 +121,7 @@ public class ArticleDetailFragment extends Fragment implements LoaderManager.Loa
                 getActivityCast().onUpButtonFloorChanged(mItemId, ArticleDetailFragment.this);
                 mPhotoContainerView.setTranslationY((int) (mScrollY - mScrollY / PARALLAX_FACTOR));
                 updateStatusBar();
-            }
+            }  
         });
 
         mPhotoView = (ImageView) mRootView.findViewById(R.id.photo);
@@ -209,6 +211,8 @@ public class ArticleDetailFragment extends Fragment implements LoaderManager.Loa
                                 mRootView.findViewById(R.id.meta_bar)
                                         .setBackgroundColor(mMutedColor);
                                 updateStatusBar();
+                                //int height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_PX, bitmap.getHeight(), getResources().getDisplayMetrics());
+                              //  Log.e("Error","VVSS ::" + height + "" );
                             }
                         }
 
