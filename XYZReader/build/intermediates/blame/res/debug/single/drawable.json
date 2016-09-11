@@ -40,8 +40,16 @@
         "source": "/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/drawable/abc_cab_background_top_material.xml"
     },
     {
+        "merged": "/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/res/merged/debug/drawable/navigation_empty_icon.xml",
+        "source": "/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/design/24.2.0/res/drawable/navigation_empty_icon.xml"
+    },
+    {
         "merged": "/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/res/merged/debug/drawable/abc_btn_check_material.xml",
         "source": "/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/drawable/abc_btn_check_material.xml"
+    },
+    {
+        "merged": "/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/res/merged/debug/drawable/design_ic_visibility.xml",
+        "source": "/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/design/24.2.0/res/drawable/design_ic_visibility.xml"
     },
     {
         "merged": "/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_dark.xml",
@@ -81,7 +89,7 @@
     },
     {
         "merged": "/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/res/merged/debug/drawable/design_snackbar_background.xml",
-        "source": "/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/design/24.1.0/res/drawable/design_snackbar_background.xml"
+        "source": "/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/design/24.2.0/res/drawable/design_snackbar_background.xml"
     },
     {
         "merged": "/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_dark.xml",
@@ -145,7 +153,7 @@
     },
     {
         "merged": "/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/res/merged/debug/drawable/design_fab_background.xml",
-        "source": "/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/design/24.1.0/res/drawable/design_fab_background.xml"
+        "source": "/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/design/24.2.0/res/drawable/design_fab_background.xml"
     },
     {
         "merged": "/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/res/merged/debug/drawable/abc_tab_indicator_material.xml",

@@ -35,6 +35,7 @@
             android:textColor="@color/textPrimary"
             android:ellipsize="end"
             android:maxLines="4"
+            android:fontFamily="Roboto-Regular"
             />
 
         <TextView
@@ -48,6 +49,7 @@
             android:textColor="@color/textSecondary"
             android:maxLines="1"
             android:singleLine="true"
+            android:fontFamily="Roboto-Regular"
             android:ellipsize="end" />
     </LinearLayout>
 

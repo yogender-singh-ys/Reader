@@ -9,4 +9,6 @@
 
     <string name="up">Up</string>
 
+    <string name="network_error">Uh-oh! This app requires an internet connection.</string>
+
 </resources>

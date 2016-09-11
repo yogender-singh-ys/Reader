@@ -8,6 +8,7 @@ import android.content.IntentFilter;
 import android.content.Loader;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.support.design.widget.Snackbar;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
@@ -25,6 +26,7 @@ import com.example.xyzreader.R;
 import com.example.xyzreader.data.ArticleLoader;
 import com.example.xyzreader.data.ItemsContract;
 import com.example.xyzreader.data.UpdaterService;
+import com.example.xyzreader.remote.ConnectionDetector;
 import com.squareup.picasso.Picasso;
 
 /**
@@ -39,6 +41,8 @@ public class ArticleListActivity extends AppCompatActivity implements  LoaderMan
     private SwipeRefreshLayout mSwipeRefreshLayout;
     private RecyclerView mRecyclerView;
     private Context mContext;
+    private boolean isConnected = true;
+    private Snackbar snackbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,10 +62,28 @@ public class ArticleListActivity extends AppCompatActivity implements  LoaderMan
         if (savedInstanceState == null) {
             refresh();
         }
+
+        // snackbar for network
+        snackbar = Snackbar.make(mSwipeRefreshLayout, R.string.network_error, Snackbar.LENGTH_LONG);
+
+        // check for internet
+        ConnectionDetector networkCheck = new ConnectionDetector(this);
+        isConnected = networkCheck.isConnectingToInternet();
+        if(!isConnected)
+        {
+            isConnected = false;
+            snackbar.show();
+        }
+
+
     }
 
     private void refresh() {
-        startService(new Intent(this, UpdaterService.class));
+        if(isConnected) {
+            startService(new Intent(this, UpdaterService.class));
+        }else{
+            snackbar.show();
+        }
     }
 
     @Override
