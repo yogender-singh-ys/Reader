@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="arm64-v8a,armeabi-v7a,armeabi"
-    api-level="23"
-    density="xxhdpi"
+    abi="x86"
+    api-level="24"
+    density="560dpi"
     format="7"
-    timestamp="195368835404709"
+    timestamp="195928192093370"
     token="501706358771829713" >
 
     <task
         name="javac"
-        duration="196" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="39" />
+        duration="0" />
     <task
         name="verifier"
-        duration="10" />
+        duration="0" />
 
     <artifact
-        location="/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex"
-        type="DEX" />
+        location="/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/res/resources-debug.ap_"
+        type="RESOURCES" />
 
-    <build timestamp="195216209778587" >
+    <build timestamp="195833534255839" >
         <artifact
             location="/Users/yogenders/Documents/xyzreader/XYZReader/build/outputs/apk/XYZReader-debug.apk"
             type="MAIN" />
     </build>
-    <build timestamp="195368835404709" >
+    <build timestamp="195928192093370" >
         <artifact
-            location="/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex"
-            type="DEX" />
+            location="/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/res/resources-debug.ap_"
+            type="RESOURCES" />
     </build>
 
 </instant-run>
