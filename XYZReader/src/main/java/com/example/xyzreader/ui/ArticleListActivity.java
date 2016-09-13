@@ -7,8 +7,10 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.Loader;
 import android.database.Cursor;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
@@ -114,6 +116,12 @@ public class ArticleListActivity extends AppCompatActivity implements  LoaderMan
         mSwipeRefreshLayout.setRefreshing(mIsRefreshing);
     }
 
+    private void startAnimation(Intent intent, View view)
+    {
+        ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(this,view,getString(R.string.animate_card_image));
+        startActivity(intent, options.toBundle());
+    }
+
     @Override
     public Loader<Cursor> onCreateLoader(int i, Bundle bundle) {
         return ArticleLoader.newAllArticlesInstance(this);
@@ -123,8 +131,10 @@ public class ArticleListActivity extends AppCompatActivity implements  LoaderMan
     public void onLoadFinished(Loader<Cursor> cursorLoader, Cursor cursor) {
         Adapter adapter = new Adapter(cursor);
         adapter.setHasStableIds(true);
+
         mRecyclerView.setAdapter(adapter);
         int columnCount = getResources().getInteger(R.integer.list_column_count);
+
         StaggeredGridLayoutManager sglm = new StaggeredGridLayoutManager(columnCount, StaggeredGridLayoutManager.VERTICAL);
         mRecyclerView.setLayoutManager(sglm);
     }
@@ -154,7 +164,15 @@ public class ArticleListActivity extends AppCompatActivity implements  LoaderMan
             view.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    startActivity(new Intent(Intent.ACTION_VIEW, ItemsContract.Items.buildItemUri(getItemId(vh.getAdapterPosition()))));
+
+                    Intent intent = new Intent(Intent.ACTION_VIEW, ItemsContract.Items.buildItemUri(getItemId(vh.getAdapterPosition())));
+
+
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                        startAnimation(intent,view.findViewById(R.id.thumbnail));
+                    }else{
+                        startActivity(intent);
+                    }
                 }
             });
             return vh;

@@ -10,5 +10,6 @@
     <string name="up">Up</string>
 
     <string name="network_error">Uh-oh! This app requires an internet connection.</string>
+    <string name="animate_card_image">card_image</string>
 
 </resources>

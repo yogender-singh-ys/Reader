@@ -41,6 +41,7 @@
                         android:scaleType="centerCrop"
                         android:background="@color/colorPrimary"
                         android:src="@drawable/empty_detail"
+                        android:transitionName="@string/animate_card_image"
                         />
 
                 </LinearLayout>
