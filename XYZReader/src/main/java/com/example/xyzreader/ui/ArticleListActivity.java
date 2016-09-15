@@ -18,6 +18,7 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.support.v7.widget.Toolbar;
 import android.text.format.DateUtils;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.MenuItem;
 import android.view.View;
@@ -161,16 +162,21 @@ public class ArticleListActivity extends AppCompatActivity implements  LoaderMan
         public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
             View view = getLayoutInflater().inflate(R.layout.list_item_article, parent, false);
             final ViewHolder vh = new ViewHolder(view);
+
             view.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
 
                     Intent intent = new Intent(Intent.ACTION_VIEW, ItemsContract.Items.buildItemUri(getItemId(vh.getAdapterPosition())));
 
-
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                        startAnimation(intent,view.findViewById(R.id.thumbnail));
+
+                        intent.putExtra(ArticleDetailActivity.INTENT_EXTRA,"intent_string");
+                        ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(ArticleListActivity.this,view.findViewById(R.id.thumbnail),getString(R.string.animate_card_image));
+                        startActivity(intent,options.toBundle());
+                        // startActivity(intent);
                     }else{
+
                         startActivity(intent);
                     }
                 }
