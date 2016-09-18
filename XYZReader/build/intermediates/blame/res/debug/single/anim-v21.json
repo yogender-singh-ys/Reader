@@ -4,6 +4,10 @@
         "source": "/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/design/24.2.0/res/anim-v21/design_bottom_sheet_slide_out.xml"
     },
     {
+        "merged": "/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/res/merged/debug/anim-v21/up_from_bottom.xml",
+        "source": "/Users/yogenders/Documents/xyzreader/XYZReader/src/main/res/anim-v21/up_from_bottom.xml"
+    },
+    {
         "merged": "/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/res/merged/debug/anim-v21/design_appbar_state_list_animator.xml",
         "source": "/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/design/24.2.0/res/anim-v21/design_appbar_state_list_animator.xml"
     },
@@ -14,5 +18,9 @@
     {
         "merged": "/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/res/merged/debug/anim-v21/design_bottom_sheet_slide_in.xml",
         "source": "/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/design/24.2.0/res/anim-v21/design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/res/merged/debug/anim-v21/down_from_top.xml",
+        "source": "/Users/yogenders/Documents/xyzreader/XYZReader/src/main/res/anim-v21/down_from_top.xml"
     }
 ]

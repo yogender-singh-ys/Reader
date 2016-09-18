@@ -4,37 +4,47 @@
     api-level="24"
     density="560dpi"
     format="7"
-    timestamp="30008493041597"
-    token="501706358771829713" >
+    timestamp="31192780832091"
+    token="501706358771829713"
+    verifier="METHOD_ADDED" >
 
     <task
         name="javac"
-        duration="273" />
+        duration="414" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="36" />
+        duration="78" />
     <task
         name="verifier"
-        duration="8" />
+        duration="20" />
 
+    <artifact
+        location="/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/res/resources-debug.ap_"
+        type="RESOURCES" />
+    <artifact
+        location="/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/5/slice_0/classes.dex"
+        type="DEX" />
     <artifact
         location="/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex"
         type="DEX" />
 
-    <build timestamp="29775579637092" >
+    <build timestamp="30556936382255" >
         <artifact
             location="/Users/yogenders/Documents/xyzreader/XYZReader/build/outputs/apk/XYZReader-debug.apk"
             type="MAIN" />
     </build>
-    <build timestamp="29879958686502" >
+    <build
+        timestamp="31192780832091"
+        verifier="METHOD_ADDED" >
         <artifact
             location="/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/res/resources-debug.ap_"
             type="RESOURCES" />
-    </build>
-    <build timestamp="30008493041597" >
+        <artifact
+            location="/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/5/slice_0/classes.dex"
+            type="DEX" />
         <artifact
             location="/Users/yogenders/Documents/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex"
             type="DEX" />

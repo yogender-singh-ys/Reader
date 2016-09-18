@@ -14,6 +14,7 @@ import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.support.v7.widget.Toolbar;
@@ -23,6 +24,8 @@ import android.util.TypedValue;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 
 import com.example.xyzreader.R;
@@ -46,6 +49,8 @@ public class ArticleListActivity extends AppCompatActivity implements  LoaderMan
     private Context mContext;
     private boolean isConnected = true;
     private Snackbar snackbar;
+    private Integer lastPosition = -1;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,6 +82,8 @@ public class ArticleListActivity extends AppCompatActivity implements  LoaderMan
             isConnected = false;
             snackbar.show();
         }
+
+
 
 
     }
@@ -199,12 +206,26 @@ public class ArticleListActivity extends AppCompatActivity implements  LoaderMan
             holder.thumbnailView.setImageUrl(mCursor.getString(ArticleLoader.Query.THUMB_URL), ImageLoaderHelper.getInstance(ArticleListActivity.this).getImageLoader());
 
             holder.thumbnailView.setAspectRatio(mCursor.getFloat(ArticleLoader.Query.ASPECT_RATIO));
+
+            Animation animation = AnimationUtils.loadAnimation(getBaseContext(),
+                    (position > lastPosition) ? R.anim.up_from_bottom
+                            : R.anim.down_from_top);
+            holder.itemView.startAnimation(animation);
+            lastPosition = position;
         }
 
         @Override
         public int getItemCount() {
             return mCursor.getCount();
         }
+
+        @Override
+        public void onViewDetachedFromWindow(ViewHolder holder) {
+            super.onViewDetachedFromWindow(holder);
+            holder.itemView.clearAnimation();
+        }
+
+
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
